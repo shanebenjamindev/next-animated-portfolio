@@ -35,7 +35,7 @@ export default function TransitionProvider({ children }) {
   return (
     <AnimatePresence mode="wait">
       <div key={path} className="">
-        {/* <motion.div
+        <motion.div
           className="fixed h-screen w-screen rounded-t-[100%] z-40 bg-black bottom-0"
           initial={{ opacity: 0, height: "80vh" }}
           exit={{ height: "190vh", opacity: 1 }}
@@ -60,7 +60,7 @@ export default function TransitionProvider({ children }) {
             height: "0vh",
             transition: { duration: 0.5, delay: 1, ease: "easeInOut" },
           }}
-        /> */}
+        />
 
         <div className="h-24">
           <Home />

@@ -1,10 +1,13 @@
 "use client";
 import Hero from "@/components/Hero/hero";
 import Preloader from "@/components/Preloader/preloader";
-import Projects from "@/components/Projects/projects";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Landing from "@/components/Landing/landing";
+import Description from "@/components/Description/description";
+import Contact from "@/components/Contact/contact";
+import SlidingImages from "@/components/SlidingImages/slidingImages";
+import Projects from "@/components/Projects/projects";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,14 +27,19 @@ export default function Home() {
 
   return (
     <main>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-      </AnimatePresence>
+      </AnimatePresence> */}
+
       <Landing />
-      {/* 
       <Description />
+      <Projects />
       <SlidingImages />
-      <Contact />  */}
+      <Contact />
+
+      {/* 
+      <SlidingImages />
+        */}
     </main>
   );
 }

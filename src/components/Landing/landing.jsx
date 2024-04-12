@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { slideUp } from "./animation";
 import { motion } from "framer-motion";
+import styles from "./style.module.scss";
 
 export default function Landing() {
   const firstText = useRef(null);
@@ -42,23 +43,25 @@ export default function Landing() {
 
   return (
     <motion.main
-      className="w-screen h-full bg-black"
       variants={slideUp}
+      className={styles.landingContainer}
       initial="initial"
       animate="enter"
     >
-      <img
-        src="/public/images/projects/airbnbProjects.jpeg"
+      <Image
         fill={true}
-        alt="background"
+        className={styles.landingImg}
+        alt="landing"
+        src={"/images/projects/background.jpg"}
       />
-      <div>
-        <div ref={slider}>
+      <div className={`${styles.sliderContainer}`}>
+        <div ref={slider} className={`flex ${styles.slider}`}>
           <p ref={firstText}>Freelance Developer -</p>
           <p ref={secondText}>Freelance Developer -</p>
         </div>
       </div>
-      <div data-scroll data-scroll-speed={0.1}>
+
+      <div className={styles.description} data-scroll data-scroll-speed={0.1}>
         <svg
           width="9"
           height="9"
