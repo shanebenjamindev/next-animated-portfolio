@@ -1,0 +1,48 @@
+[
+    {
+        "Name": "Infotel Dashboard",
+        "Description": "Develop a web-app with login, routing and responsive, Line chart that let the user choses the forecast period corresponding to the table in the excel, nested table with a button to download the excel file",
+        "ImageUrl": "/images/infotel.png",
+        "Tech": "ReactJS (d3js, redux--toolkit, react-router-dom,...), Typescript, HTML, CSS, Bootstrap",
+        "Github": "https://github.com/shanebenjamindev/infotel-react-ts",
+        "Deloy": "https://infotel-react-ts.vercel.app/"
+    },
+    {
+        "Name": "CLOUDPOT Training site",
+        "Description": " I've crafted an immersive training site using cutting-edge technologies. The site's dynamic menu is powered by a JSON data structure, allowing for seamless updates and modifications. Leverage interactive elements to engage users and provide a delightful culinary experience.",
+        "Tech": "HTML, CSS, JavaScript, ReactJS (react-router-dom, aos)",
+        "ImageUrl": "/images/cloudpottrainingsite.png",
+        "Github": "https://github.com/vpgiang0205/cloudpot",
+        "Deloy": "https://cloudpot.vercel.app/"
+    },
+    {
+        "Name": " SAIGON TOWN",
+        "Tech": "Wordpress, CSS, Figma, PHP",
+        "Deloy": "https://saigontown.vn/",
+        "Description": "SAIGON TOWN is a captivating online platform developed by THANG LOI GROUP, offering visitors an immersive journey through the vibrant culture and lifestyle of Saigon. Seamlessly blending modern design with intuitive functionality, this website serves as a digital gateway to explore the dynamic cityscape of Saigon.",
+        "ImageUrl": "/images/saigontown.png"
+    },
+    {
+        "Name": "Restaurant",
+        "Description": "The Restaurant Project is a fully responsive website for a restaurant. It features an elegant design and a user-friendly interface, and it is optimized for mobile devices. It provides customers with an accessible and enjoyable way to explore the restaurant's offerings.",
+        "Tech": "HTML, CSS, Bootstrap, jQuery, CSS Animation, Responsive",
+        "ImageUrl": "https://react-portfolio-ochre-theta.vercel.app/static/media/1.da70e44d91c88ece61df.png",
+        "Github": "https://github.com/vpgiang0205/CapstoneProject",
+        "Deloy": "https://capstone-project-vpgiang0205.vercel.app/"
+    },
+    {
+        "Name": "SAMAR",
+        "Description": "The SAMAR Project is known for its user-friendly and visually appealing design. It incorporates smooth animations that enhance the overall user experience. While the project's specific purpose is not detailed, its design and interactivity contribute to an engaging user experience.",
+        "Tech": "HTML, CSS, Bootstrap, jQuery, CSS Animation",
+        "ImageUrl": "https://react-portfolio-ochre-theta.vercel.app/static/media/5.c90ac185a085261953af.bmp",
+        "Github": "https://github.com/vpgiang0205/SAMAR",
+        "Deloy": "https://samar-one.vercel.app/"
+    },
+    {
+        "Name": "The Diamond City",
+        "Description": "Design, Develop User Interface, Implement Api, fully responsive, CRUD, Admin Page",
+        "ImageUrl": "/images/thediamoncity.png",
+        "Github": "https://github.com/shanebenjamindev/thediamondcity_bookingsite",
+        "Deloy": "https://diamondcity-site.vercel.app/"
+    }
+]

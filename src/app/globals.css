@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url('https://raw.githubusercontent.com/vpgiang0205/Portfolio.io/main/images/wallpaperflare.com_wallpaper.jpg');
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: -1;
+}
+
+
+body {
+    margin: 0px;
+    overflow: hidden;
+    /* Hide scrollbars */
+    /* cursor: wait; Add after Preloader*/
+}

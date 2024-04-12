@@ -7,11 +7,12 @@ const links = [
   { title: "Home", url: "/" },
   { title: "About", url: "/about" },
   { title: "Contact", url: "/contact" },
-  { title: "", url: "/portfolio" },
+  { title: "Portfolio", url: "/portfolio" },
 ];
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   const topVariant = {
     closed: {
       rotate: 0,
@@ -42,8 +43,32 @@ const Navbar = () => {
     },
   };
 
+  const listVariant = {
+    closed: {
+      x: "100vh",
+    },
+    opened: {
+      x: 0,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const listItemVariant = {
+    closed: {
+      x: -10,
+      opacity: 0,
+    },
+    opened: {
+      x: 0,
+      opacity: 1,
+    },
+  };
+
   return (
-    <div className=" navbar h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
+    <div className="navbar h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48 overflow-hidden">
       <div className="hidden md:flex gap-8">
         {links.map((link, index) => (
           <NavLink link={link} key={index} />
@@ -101,13 +126,18 @@ const Navbar = () => {
 
         {/* Menu list */}
         {open && (
-          <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col justify-center items-center gap-8 text-4xl">
+          <motion.ul
+            variants={listVariant}
+            initial="closed"
+            animate="opened"
+            className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col justify-center items-center gap-8 text-4xl"
+          >
             {links.map((link, index) => (
-              <Link href={link.url} key={index}>
-                {link.title}
-              </Link>
+              <motion.li variants={listItemVariant} key={index}>
+                <Link href={link.url}>{link.title}</Link>
+              </motion.li>
             ))}
-          </div>
+          </motion.ul>
         )}
       </div>
     </div>

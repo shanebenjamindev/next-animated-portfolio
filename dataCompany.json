@@ -1,0 +1,40 @@
+[
+    {
+        "NameCompany": "THANG LOI GROUP",
+        "Position": "Web Developer",
+        "Time": "12/2023 – 01/2024",
+        "Description": "English Communication, Plan and develop module, Q/A with testers, Grow other skills (MERN Stack), Managing projects with npm, yarn",
+        "Projects": [
+            {
+                "Name": " SAIGON TOWN",
+                "Tech": "HTML5, Wordpress, CSS3, Figma, PHP, Bootstrap, JavaScript",
+                "Deloy": "https://saigontown.vn/",
+                "Description": "SEO, Optimize source code, Design Database, Design User Interface, Implement Logic, Implement new features and enhancements, animations, plugins, ....",
+                "ImageUrl": "/images/saigontown.png"
+            },
+            {
+                "Name": "The Diamond City",
+                "Tech": "ReactJS (redux--toolkit, react-router-dom,...), RestfulApi, HTML, CSS, Bootstrap",
+                "Description": "Design, Develop User Interface, Implement Api, fully responsive, CRUD, Admin Page",
+                "ImageUrl": "/images/thediamoncity.png",
+                "Github": "https://github.com/shanebenjamindev/thediamondcity_bookingsite",
+                "Deloy": "https://diamondcity-site.vercel.app/"
+            }
+        ]
+    },
+    {
+        "NameCompany": "DH Solution",
+        "Position": "Web Developer",
+        "Time": "12/2023 – 01/2024",
+        "Description": "English Communication, Plan and develop module, base UI, consultant with clients, Q/A with testers",
+        "Projects": [
+            {
+                "Name": "MEDICAL EQUIQMENT MANAGEMENT",
+                "Tech": "JS, PHP, MySQL, HTML, CSS, MVC, CRUD",
+                "videoUrl": "https://drive.google.com/file/d/1yaPycGW_Um6qy8PbYZm-OAbML8kcsbf9/preview",
+                "Description": "Conducted code reviews and provided mentorship to junior/senior developers, fostering a culture of continuous learning and improvement",
+                "Github": "https://github.com/vpgiang0205/QuanLythietbiYte"
+            }
+        ]
+    }
+]

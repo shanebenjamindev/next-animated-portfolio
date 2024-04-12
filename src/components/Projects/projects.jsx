@@ -1,0 +1,67 @@
+import React from "react";
+
+export default function Projects() {
+  return (
+    <>
+      Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+      <br></br>Project
+    </>
+  );
+}
