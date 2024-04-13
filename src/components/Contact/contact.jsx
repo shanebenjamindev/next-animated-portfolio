@@ -4,8 +4,7 @@ import Rounded from "../../common/RoundedButton";
 import { useRef, useState } from "react";
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import Magnetic from "../../common/Magnetic";
-import emailjs from "emailjs-com";
-import { FacebookOutlined } from "@ant-design/icons";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const container = useRef(null);

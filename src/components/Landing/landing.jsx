@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import { useRef, useLayoutEffect } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import { slideUp } from "./animation";
+import { ScrollTrigger } from "gsap/all";
+import gsap from "gsap";
 import { motion } from "framer-motion";
 import styles from "./style.module.scss";
 

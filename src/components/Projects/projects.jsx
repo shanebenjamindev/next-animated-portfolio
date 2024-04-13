@@ -36,7 +36,7 @@ const projects = [
     title: "Restaurant Projects",
     role: "Designer & Developer",
     url: "https://diamondcity-site.vercel.app",
-    src: "airbnbProjects.jpeg",
+    src: "restaurant.png",
     color: "#21242b",
   },
 ];
@@ -124,17 +124,15 @@ export default function Projects() {
       <div className={`${styles.body} sm:flex flex-col `}>
         {projects.map((project, index) => {
           return (
-            <div className="w-full" key={index}>
-              <a href={project.url}>
-                <Project
-                  index={index}
-                  title={project.title}
-                  manageModal={manageModal}
-                  role={project.role}
-                  url={project.url}
-                />
-              </a>
-            </div>
+            <a className="w-full" href={project.url} key={index}>
+              <Project
+                index={index}
+                title={project.title}
+                manageModal={manageModal}
+                role={project.role}
+                url={project.url}
+              />
+            </a>
           );
         })}
       </div>

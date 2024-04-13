@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Nav from "./nav";
 import gsap from "gsap";
 import Magnetic from "@/common/Magnetic";
+import Link from "@/components/Header/nav/Link";
 
 export default function Header() {
   const header = useRef(null);
@@ -17,7 +18,20 @@ export default function Header() {
   useEffect(() => {
     if (isActive) setIsActive(false);
   }, [pathname]);
-
+  const navItems = [
+    {
+      title: "Home",
+      href: "/",
+    },
+    {
+      title: "Projects",
+      href: "/projects",
+    },
+    {
+      title: "Contact",
+      href: "/contact",
+    },
+  ];
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.to(button.current, {
@@ -46,34 +60,23 @@ export default function Header() {
   return (
     <>
       <div ref={header} className={styles.header}>
-        <div className={styles.logo}>
+        <a href="/" className={styles.logo}>
           <p className={styles.copyright}>©</p>
           <div className={styles.name}>
             <p className={styles.codeBy}>Code by</p>
             <p className={styles.giang}>Giang</p>
             <p className={styles.benjamin}>Benjamin</p>
           </div>
-        </div>
+        </a>
         <div className={styles.nav}>
-          <Magnetic>
-            <div className={styles.el}>
-              <a>Work</a>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
-
-          <Magnetic>
-            <div className={styles.el}>
-              <a>About</a>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
-          <Magnetic>
-            <div className={styles.el}>
-              <a>Contact</a>
-              <div className={styles.indicator}></div>
-            </div>
-          </Magnetic>
+          {navItems.map((data, index) => {
+            return (
+              <Link
+                key={index}
+                data={{ ...data, index }}
+              ></Link>
+            );
+          })}
         </div>
       </div>
       <div ref={button} className={styles.headerButtonContainer}>
