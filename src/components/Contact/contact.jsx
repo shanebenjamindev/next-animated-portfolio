@@ -67,7 +67,7 @@ export default function Contact() {
               <Image
                 fill={true}
                 alt={"image"}
-                src={`/images/projects/background.jpg`}
+                src={`/images/projects/background.png`}
               />
             </div>
             <h2>
