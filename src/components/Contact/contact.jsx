@@ -128,16 +128,16 @@ export default function Contact() {
           <div>
             <span>
               <h3>Version</h3>
-              <p>2022 © Edition</p>
+              <p>2024 © Edition</p>
             </span>
             <span>
-              <h3>Version</h3>
-              <p>11:49 PM GMT+2</p>
+              <h3>Time</h3>
+              <p>4:37 PM GMT+7</p>
             </span>
           </div>
           <div>
             <span>
-              <h3>Information</h3>
+              <h3>Create by</h3>
               <Magnetic>
                 <p onClick={() => handleCopy("vophonggiang0205@gmail.com")}>
                   vophonggiang0205@gmail.com

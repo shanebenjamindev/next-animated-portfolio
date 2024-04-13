@@ -38,7 +38,7 @@ export default function TransitionProvider({ children }) {
           className="fixed h-screen w-screen rounded-t-[100%] z-40 bg-white bottom-0"
           initial={{ height: "0vh" }}
           exit={{ height: "200vh" }}
-          transition={{ duration: 0.3 }}
+          transition={{ duration: 0.4 }}
         />
 
         <motion.div
@@ -56,7 +56,7 @@ export default function TransitionProvider({ children }) {
           initial={{ height: "200vh" }}
           animate={{
             height: "0vh",
-            transition: { duration: 0.5, delay: 0.5, ease: "easeInOut" },
+            transition: { duration: 0.4, delay: 0.5, ease: "easeInOut" },
           }}
         />
         <Header />
