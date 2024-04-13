@@ -24,7 +24,7 @@ export default function Magnetic({ children }) {
       xTo(x * 0.35);
       yTo(y * 0.35);
     });
-    magnetic.current.addEventListener("mouseleave", (e) => {
+    magnetic.current.addEventListener("mouseleave", () => {
       xTo(0);
       yTo(0);
     });

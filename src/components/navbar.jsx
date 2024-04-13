@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import NavLink from "./navLink";
 import { motion } from "framer-motion";
@@ -90,13 +91,13 @@ const Navbar = () => {
 
       <div className="hidden md:flex gap-4">
         <Link href="#">
-          <img src="/github.png" width={24} height={24} alt="" />
+          <Image src="/github.png" width={24} height={24} alt="" />
         </Link>
         <Link href="#">
-          <img src="/facebook.png" width={24} height={24} alt="" />
+          <Image src="/facebook.png" width={24} height={24} alt="" />
         </Link>
         <Link href="#">
-          <img src="/instagram.png" width={24} height={24} alt="" />
+          <Image src="/instagram.png" width={24} height={24} alt="" />
         </Link>
       </div>
 

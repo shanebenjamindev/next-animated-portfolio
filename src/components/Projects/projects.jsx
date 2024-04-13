@@ -5,8 +5,6 @@ import Project from "./components/project";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
-import Rounded from "../../common/RoundedButton";
-import { Link } from "react-router-dom";
 
 const projects = [
   {
@@ -126,13 +124,12 @@ export default function Projects() {
       <div className={`${styles.body} sm:flex flex-col `}>
         {projects.map((project, index) => {
           return (
-            <div className="w-full">
+            <div className="w-full" key={index}>
               <a href={project.url}>
                 <Project
                   index={index}
                   title={project.title}
                   manageModal={manageModal}
-                  key={index}
                   role={project.role}
                   url={project.url}
                 />

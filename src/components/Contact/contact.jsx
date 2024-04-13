@@ -5,6 +5,7 @@ import { useRef, useState } from "react";
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
 import Magnetic from "../../common/Magnetic";
 import emailjs from "emailjs-com";
+import { FacebookOutlined } from "@ant-design/icons";
 
 export default function Contact() {
   const container = useRef(null);
@@ -71,7 +72,7 @@ export default function Contact() {
               />
             </div>
             <h2>
-              Let's work <br></br>
+              {`Let's work`} <br></br>
             </h2>
           </span>
           <h2>Together</h2>
@@ -137,19 +138,17 @@ export default function Contact() {
           </div>
           <div>
             <span>
-              <h3>socials</h3>
+              <h3>Information</h3>
               <Magnetic>
-                <p>Awwwww</p>
+                <p onClick={() => handleCopy("vophonggiang0205@gmail.com")}>
+                  vophonggiang0205@gmail.com
+                </p>
               </Magnetic>
             </span>
             <Magnetic>
-              <p>Instagram</p>
-            </Magnetic>
-            <Magnetic>
-              <p>Dribbble</p>
-            </Magnetic>
-            <Magnetic>
-              <p>Linkedin</p>
+              <p onClick={() => handleCopy("(+84) 834 718 218")}>
+                (+84) 834 718 218
+              </p>
             </Magnetic>
           </div>
         </div>

@@ -1,6 +1,5 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import Navbar from "./navbar";
 import React, { useLayoutEffect } from "react";
 import { usePathname } from "next/navigation";
 import gsap from "gsap";
