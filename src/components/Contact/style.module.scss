@@ -6,6 +6,7 @@
   justify-content: center;
   background-color: #141516;
   position: relative;
+  height: 100dvh;
 
   .contactContainer {
     padding-top: 200px;
@@ -13,13 +14,13 @@
     max-width: 1800px;
     background-color: #141516;
 
+    overflow: hidden;
     .contactTitle {
       border-bottom: 1px solid var(--fade-color);
       position: relative;
       span {
-        display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 30px;
 
         .contactImg {
           width: 100px;
@@ -42,15 +43,96 @@
     }
 
     .contactForm {
+      position: relative;
+
       textarea {
         font-size: 22px;
+        width: 100%;
         padding: 20px 0;
         border: none;
-        background-color: transparent;
         max-width: 100%;
         width: 100%;
         outline: none;
-        color: var(--light-color);
+        color: white;
+        background-color: transparent;
+      }
+
+      .contactButtonContainer {
+        position: absolute;
+        right: 300px;
+        bottom: calc(100% - (-100px));
+
+        .button {
+          width: 180px;
+          height: 180px;
+          background-color: var(--primary-color-bg);
+
+          color: white;
+          border-radius: 50%;
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          p {
+            margin: 0px;
+            font-size: 16px;
+            font-weight: 300;
+            z-index: 2;
+            position: relative;
+          }
+        }
+      }
+    }
+
+    .nav {
+      gap: 30px;
+    }
+
+    .info {
+      color: white;
+      justify-content: space-between;
+      margin-top: 50px;
+      padding: 20px;
+      div {
+        display: flex;
+        gap: 10px;
+        align-items: flex-end;
+        p,
+        h3 {
+          margin: 0px;
+          cursor: pointer;
+        }
+        p {
+          &::after {
+            content: "";
+            width: 0%;
+            height: 1px;
+            background-color: white;
+            display: block;
+            margin-top: 2px;
+            position: relative;
+            left: 0%;
+            transition: width 0.2s linear;
+          }
+          &:hover {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+        span {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+        h3 {
+          color: grey;
+          cursor: default;
+          font-weight: 300;
+          font-size: 1em;
+        }
       }
     }
   }

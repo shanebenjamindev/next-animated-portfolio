@@ -6,25 +6,38 @@ import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
 import Rounded from "../../common/RoundedButton";
+import { Link } from "react-router-dom";
 
 const projects = [
   {
+    id: "1",
     title: "CloudPot Training",
+    role: "Designer & Developer",
+    url: "https://cloudpot.vercel.app",
     src: "cloudpottrainingsite.png",
     color: "#e3e5e7",
   },
   {
+    id: "2",
     title: "SaiGonTown",
+    role: "Designer & Developer",
+    url: "https://saigontown.vn",
     src: "saigontown.png",
     color: "#d6d7dc",
   },
   {
-    title: "The Diamon City",
+    id: "3",
+    title: "The Diamond City",
+    role: "Designer & Developer",
+    url: "https://capstone-project-vpgiang0205.vercel.app",
     src: "thediamoncity.png",
     color: "#e3e3e3",
   },
   {
-    title: "Airbnb Projects",
+    id: "4",
+    title: "Restaurant Projects",
+    role: "Designer & Developer",
+    url: "https://diamondcity-site.vercel.app",
     src: "airbnbProjects.jpeg",
     color: "#21242b",
   },
@@ -110,16 +123,21 @@ export default function Projects() {
       }}
       className={styles.projects}
     >
-      <div className={styles.body}>
+      <div className={`${styles.body} sm:flex flex-col `}>
         {projects.map((project, index) => {
-          console.log(project);
           return (
-            <Project
-              index={index}
-              title={project.title}
-              manageModal={manageModal}
-              key={index}
-            />
+            <div className="w-full">
+              <a href={project.url}>
+                <Project
+                  index={index}
+                  title={project.title}
+                  manageModal={manageModal}
+                  key={index}
+                  role={project.role}
+                  url={project.url}
+                />
+              </a>
+            </div>
           );
         })}
       </div>

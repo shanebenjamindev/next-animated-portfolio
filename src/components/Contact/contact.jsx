@@ -62,7 +62,7 @@ export default function Contact() {
     <motion.div style={{ y }} ref={container} className={styles.contact}>
       <div className={`${styles.contactContainer} `}>
         <div className={`${styles.contactTitle}`}>
-          <span>
+          <span className="lg:flex md:flex">
             <div className={`${styles.contactImg}`}>
               <Image
                 fill={true}
@@ -74,33 +74,32 @@ export default function Contact() {
               Let's work <br></br>
             </h2>
           </span>
-          <h2>together</h2>
+          <h2>Together</h2>
         </div>
 
         <form ref={form} className={styles.contactForm} onSubmit={handleOk}>
-          {/* <motion.div style={{ x }} className={`${styles.buttonContainer}`}>
-              <button
-                style={{ backgroundColor: "transparent", border: "none" }}
-              >
-                <Rounded className={`${styles.button}`}>
-                  <p>Get in touch</p>
-                </Rounded>
-              </button>
-            </motion.div> */}
+          <motion.div
+            style={{ x }}
+            className={`${styles.contactButtonContainer}`}
+          >
+            <Rounded className={`${styles.button}`}>
+              <p>Get in touch</p>
+            </Rounded>
+          </motion.div>
 
           {/* <motion.svg
-              style={{ rotate, scale: 2 }}
-              width="9"
-              height="9"
-              viewBox="0 0 9 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z"
-                fill="white"
-              />
-            </motion.svg> */}
+            style={{ rotate, scale: 2 }}
+            width="9"
+            height="9"
+            viewBox="0 0 9 9"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z"
+              fill="white"
+            />
+          </motion.svg> */}
 
           {submitMessage && (
             <p className="text-center">
@@ -112,19 +111,20 @@ export default function Contact() {
             className="form-control"
             rows={6}
             onChange={handleChange}
-            placeholder="Message"
+            placeholder="Enter Your Message"
             required
           />
         </form>
-        {/* <div className={`${styles.nav}`}>
-          <Rounded onClick={() => handleCopy("(+84) 834 718 218")}>
+
+        <div className={`${styles.nav} md:flex lg:flex gap-32 `}>
+          <Rounded onClick={() => handleCopy("vophonggiang0205@gmail.com")}>
             <p>vophonggiang0205@gmail.com</p>
           </Rounded>
           <Rounded onClick={() => handleCopy("(+84) 834 718 218")}>
             <p>(+84) 834 718 218</p>
           </Rounded>
         </div>
-        <div className={`${styles.info}`}>
+        <div className={`${styles.info} md:flex lg:flex`}>
           <div>
             <span>
               <h3>Version</h3>
@@ -139,7 +139,7 @@ export default function Contact() {
             <span>
               <h3>socials</h3>
               <Magnetic>
-                <p>Awwwards</p>
+                <p>Awwwww</p>
               </Magnetic>
             </span>
             <Magnetic>
@@ -152,7 +152,7 @@ export default function Contact() {
               <p>Linkedin</p>
             </Magnetic>
           </div>
-        </div> */}
+        </div>
       </div>
     </motion.div>
   );
