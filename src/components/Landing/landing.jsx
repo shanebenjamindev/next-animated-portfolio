@@ -52,7 +52,9 @@ export default function Landing() {
         fill={true}
         className={styles.landingImg}
         alt="landing"
-        src={"/images/projects/background.jpg"}
+
+          src = "/images/projects/background.png"
+
       />
       <div className={`${styles.sliderContainer}`}>
         <div ref={slider} className={`flex ${styles.slider}`}>
