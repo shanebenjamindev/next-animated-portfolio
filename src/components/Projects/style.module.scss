@@ -14,7 +14,7 @@
   }
 
   .modalContainer {
-    height: 350px;
+    height: 250px;
     width: 400px;
     position: fixed;
     top: 50%;
@@ -41,7 +41,8 @@
   }
 
   .modal img {
-    height: auto;
+    height: 80%;
+    width: 80%;
   }
 
   .cursor,
