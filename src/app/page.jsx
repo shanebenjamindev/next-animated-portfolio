@@ -14,11 +14,14 @@ export default function Home() {
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
+
       const locomotiveScroll = new LocomotiveScroll();
 
       setTimeout(() => {
         setIsLoading(false);
+
         document.body.style.cursor = "default";
+
         window.scrollTo(0, 0);
       }, 2000);
     })();
@@ -28,13 +31,13 @@ export default function Home() {
     <main>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-
-        <Landing />
-        <Description />
-        <Projects />
-        <SlidingImages />
-        <Contact />
       </AnimatePresence>
+
+      <Landing />
+      <Description />
+      <Projects />
+      <SlidingImages />
+      <Contact />
     </main>
   );
 }
