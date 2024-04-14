@@ -28,13 +28,13 @@ export default function Home() {
     <main>
       <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-      </AnimatePresence>
 
-      <Landing />
-      <Description />
-      <Projects />
-      <SlidingImages />
-      <Contact />
+        <Landing />
+        <Description />
+        <Projects />
+        <SlidingImages />
+        <Contact />
+      </AnimatePresence>
     </main>
   );
 }
