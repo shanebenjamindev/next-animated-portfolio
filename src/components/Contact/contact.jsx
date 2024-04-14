@@ -75,6 +75,11 @@ export default function Contact() {
             </h2>
           </span>
           <h2>Together</h2>
+          {submitMessage && (
+            <p className="text-center pb-5">
+              {submitMessage}, Thanks for choosing me
+            </p>
+          )}
         </div>
 
         <form ref={form} className={styles.contactForm} onSubmit={handleOk}>
@@ -82,9 +87,11 @@ export default function Contact() {
             style={{ x }}
             className={`${styles.contactButtonContainer}`}
           >
-            <Rounded className={`${styles.button}`}>
-              <p>Get in touch</p>
-            </Rounded>
+            <button style={{ backgroundColor: "transparent", border: "none" }}>
+              <Rounded className={`${styles.button}`}>
+                <p>Get in touch</p>
+              </Rounded>
+            </button>
           </motion.div>
 
           {/* <motion.svg
@@ -101,11 +108,6 @@ export default function Contact() {
             />
           </motion.svg> */}
 
-          {submitMessage && (
-            <p className="text-center">
-              {submitMessage}, Thanks for choosing me
-            </p>
-          )}
           <textarea
             name="message"
             className="form-control"
