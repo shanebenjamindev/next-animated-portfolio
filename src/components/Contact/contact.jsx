@@ -1,6 +1,5 @@
 "use client";
 import styles from "./style.module.scss";
-import Image from "next/image";
 import Rounded from "../../common/RoundedButton";
 import { useRef, useState } from "react";
 import { useScroll, motion, useTransform, useSpring } from "framer-motion";
@@ -64,7 +63,6 @@ export default function Contact() {
       <div className={`${styles.contactContainer} `}>
         <div className={`${styles.contactTitle}`}>
           <span className="lg:flex md:flex">
-           
             <h2>
               {`Let's work`} <br></br>
             </h2>
