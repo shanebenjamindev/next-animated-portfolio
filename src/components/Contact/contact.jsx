@@ -67,7 +67,7 @@ export default function Contact() {
             <div className={`${styles.contactImg}`}>
               <Image
                 fill={true}
-                alt={"image"}
+                alt={"background avatar"}
                 src="/images/projects/background.png"
               />
             </div>
