@@ -64,14 +64,7 @@ export default function Contact() {
       <div className={`${styles.contactContainer} `}>
         <div className={`${styles.contactTitle}`}>
           <span className="lg:flex md:flex">
-            <div className={`${styles.contactImg}`}>
-              <Image
-                src="/images/projects/background.png"
-                alt="Background Avatar"
-                width={500}
-                height={500}
-              />
-            </div>
+           
             <h2>
               {`Let's work`} <br></br>
             </h2>
