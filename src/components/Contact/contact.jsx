@@ -66,9 +66,10 @@ export default function Contact() {
           <span className="lg:flex md:flex">
             <div className={`${styles.contactImg}`}>
               <Image
-                fill={true}
-                alt={"background avatar"}
                 src="/images/projects/background.png"
+                alt="Background Avatar"
+                width={500}
+                height={500}
               />
             </div>
             <h2>
