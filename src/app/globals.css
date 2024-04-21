@@ -21,15 +21,12 @@
 
 
 body {
-  margin: 0px;
   overflow: hidden;
-  /* Hide scrollbars */
 }
 
 @media screen and (max-width: 739px) {
   :root {
     --fontSize-title-lg: 20px;
-
     --fontSize-content-lg: 20px;
     --fontSize-content-md: 16px;
   }

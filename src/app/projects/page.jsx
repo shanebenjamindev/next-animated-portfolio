@@ -3,10 +3,10 @@ import Projects from "@/components/Projects/projects";
 import { motion } from "framer-motion";
 const ProjectPage = () => {
   return (
-    <div className="h-full bg-black text-white" style={{ height: "100dvh" }}>
+    <div className="bg-black text-white" >
       <motion.div
-        initial={{ y: "100%" }}
-        animate={{ y: "0%" }}
+        initial={{ opacity: "0" }}
+        animate={{ opacity: "1" }}
         transition={{ duration: 0.8, delay: 1 }}
       >
         <Projects />

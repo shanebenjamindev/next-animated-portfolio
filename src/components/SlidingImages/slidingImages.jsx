@@ -5,19 +5,19 @@ import Image from "next/image";
 
 const slider1 = [
   {
-    color: "#e3e5e7",
+    color: "#00ff7794",
     src: "cloudpottrainingsite.png",
   },
   {
-    color: "#d6d7dc",
+    color: "#ffbf0082",
     src: "saigontown.png",
   },
   {
-    color: "#e3e3e3",
+    color: "#eeff00cc",
     src: "thediamoncity.png",
   },
 {
-    color: "#21242b",
+    color: "#eeff0040",
     src: "airbnbProjects.jpeg",
   },
 ];
@@ -25,19 +25,19 @@ const slider1 = [
 const slider2 = [
   {
     color: "#d4e3ec",
-    src: "infotel.jpg",
+    src: "restaurant.png",
   },
   {
-    color: "#e5e0e1",
+    color: "#ff00335b",
     src: "movieProject.jpeg",
   },
   {
-    color: "#d7d4cf",
+    color: "#0088ff2f",
     src: "infotel.png",
   },
   {
-    color: "#e1dad6",
-    src: "oop-management.jpeg",
+    color: "#45da0076",
+    src: "hilink.png",
   },
 ];
 

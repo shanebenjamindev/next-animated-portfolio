@@ -10,35 +10,43 @@ const projects = [
   {
     id: "1",
     title: "SaiGonTown",
-    role: "Wordpress Developer",
+    role: "Wordpress, CSS, Figma, PHP",
     url: "https://saigontown.vn",
     src: "saigontown.png",
-    color: "#d6d7dc",
+    color: "#fff7004d",
   },
   {
     id: "2",
-    title: "CloudPot Training",
-    role: "Designer & Front End Developer",
-    url: "https://cloudpot.vercel.app",
-    src: "cloudpottrainingsite.png",
-    color: "#e3e5e7",
+    title: "HiLink Landing Page",
+    role: "NextJs, Typescript, Lenis, Gsap, TailwindCSS",
+    url: "https://hilink-landing-page.vercel.app/",
+    src: "hilink.png",
+    color: "#3dff5381",
   },
   {
     id: "3",
     title: "The Diamond City",
-    role: "Designer & Front End Developer",
+    role: "ReactJS (redux--toolkit, react-router-dom,...), HTML, CSS, Bootstrap",
     url: "https://diamondcity-site.vercel.app",
     src: "thediamoncity.png",
-    color: "#e3e3e3",
+    color: "#fff200be",
   },
   {
     id: "4",
     title: "Restaurant Projects",
-    role: "Front End Developer",
+    role: "HTML, CSS, Bootstrap, jQuery, CSS Animation, Responsive",
     url: "https://capstone-project-vpgiang0205.vercel.app",
     src: "restaurant.png",
-    color: "#21242b",
+    color: "#ffc8006d",
   },
+  {
+    id: "5",
+    title: "CloudPot Training",
+    role: "HTML, CSS, JavaScript, ReactJS (react-router-dom, aos)",
+    url: "https://cloudpot.vercel.app",
+    src: "cloudpottrainingsite.png",
+    color: "#00ff7381",
+  }
 ];
 
 const scaleAnimation = {
@@ -115,7 +123,7 @@ export default function Projects() {
   };
 
   return (
-    <main
+    <section
       onMouseMove={(e) => {
         moveItems(e.clientX, e.clientY);
       }}
@@ -184,6 +192,6 @@ export default function Projects() {
           View
         </motion.div>
       </>
-    </main>
+    </section>
   );
 }

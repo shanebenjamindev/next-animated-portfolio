@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Preloader from "@/components/Preloader/preloader";
+import Header from "./Header/header";
 
 export default function TransitionProvider({ children }) {
   const [isLoading, setIsLoading] = useState(true);
@@ -67,12 +68,12 @@ export default function TransitionProvider({ children }) {
               transition: { duration: 1, delay: 0.1, ease: "easeInOut" },
             }}
           />
-          <div className="">
-            <AnimatePresence mode="wait">
-              {isLoading && <Preloader />}
-            </AnimatePresence>
-            {children}
-          </div>
+          <AnimatePresence mode="wait">
+            {isLoading && <Preloader />}
+          </AnimatePresence>
+          <Header />
+
+          {children}
         </div>
       </AnimatePresence>
     </>
